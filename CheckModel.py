@@ -2,7 +2,7 @@ import torch
 from transformers import BertTokenizer, BertForSequenceClassification
 
 # Загрузка обученной модели
-model = BertForSequenceClassification.from_pretrained('C:/Users/Acer ASPIRE 5/OneDrive/Рабочий стол/погром/курсовая/trySpacy/bert_model')
+model = BertForSequenceClassification.from_pretrained('C:/Users/Acer ASPIRE 5/OneDrive/Рабочий стол/погром/курсовая/ResumeParser/bert_model')
 
 # Инициализация токенизатора BERT
 tokenizer = BertTokenizer.from_pretrained("dslim/bert-base-NER")

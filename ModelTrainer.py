@@ -1,13 +1,12 @@
 import torch
-from transformers import BertTokenizer, BertModel, AutoTokenizer, BertForTokenClassification
+from transformers import BertTokenizer, BertModel, AutoTokenizer
 from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from transformers import BertForSequenceClassification, AdamW
-import numpy as np
 
 # Преобразование текста в формат BERT
-tokenizer = BertTokenizer.from_pretrained("dslim/bert-base-NER")
+tokenizer = AutoTokenizer.from_pretrained("dslim/bert-base-NER")
 max_len = 301  # Максимальная длина входной последовательности для BERT
 
 # Чтение данных из файла
@@ -70,18 +69,14 @@ class CustomDataset(Dataset):
             'labels': torch.tensor(self.labels[idx])
         }
 
-train_labels = np.repeat(train_labels, repeats=4)
-test_labels = np.repeat(test_labels, repeats=4)
-
 train_dataset = CustomDataset(train_texts, train_labels)
 test_dataset = CustomDataset(test_texts, test_labels)
 
 # Загрузка предобученной модели BERT
-model = BertForTokenClassification.from_pretrained('dslim/bert-base-NER', num_labels=len(label_encoder.classes_))
+model = BertForSequenceClassification.from_pretrained('dslim/bert-base-NER', num_labels=len(label_encoder.classes_))
 
 # Обучение модели
 optimizer = AdamW(model.parameters(), lr=1e-5)
-
 train_dataloader = DataLoader(train_dataset, batch_size=8, shuffle=True)
 
 epochs = 6  # Устанавливаем количество эпох
