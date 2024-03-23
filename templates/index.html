@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English-Hebrew resume parser</title>
+</head>
+<body>
+    <h1>English-Hebrew resume parser</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="file_input">Choose file:</label>
+        <input type="file" id="file_input" name="file_input"><br><br>
+        <button type="submit">Parse</button>
+    </form>
+    <div>
+        {% if file_name %}
+            <p>File loaded: {{ file_name }}</p>
+            {% if cv_holder_name %}
+                <p>Holder's Name: {{ cv_holder_name }}</p>
+            {% endif %}
+            {% if phone_numbers %}
+                <p>Phone Numbers: {{ phone_numbers }}</p>
+            {% endif %}
+            {% if emails %}
+                <p>Emails: {{ emails }}</p>
+            {% endif %}
+            {% if links %}
+                <p>Links: {{ links }}</p>
+            {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>
