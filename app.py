@@ -4,6 +4,7 @@ import shutil
 import tempfile
 from English.InfoExtraction import extract_atributes
 from English.InfoExtraction import extract_text_from_pdf
+from services import allowed_file
 
 app = Flask(__name__)
 
@@ -18,7 +19,7 @@ def index():
     if request.method == 'POST':
         text = request.form.get('text_input')
         file = request.files.get('file_input')
-        if file:
+        if file and allowed_file(file.filename):
             # Создаем временный файл для сохранения загруженного файла
             temp_dir = tempfile.gettempdir()
             temp_path = os.path.join(temp_dir, file.filename)
@@ -31,7 +32,11 @@ def index():
 
             # Удаление временного файла
             os.remove(temp_path)
-    return render_template('index.html', text=text, file_name=file_name, cv_holder_name=cv_holder_name, phone_numbers=phone_numbers, emails=emails, links=links)
+            return render_template('index.html', text=text, file_name=file_name, cv_holder_name=cv_holder_name,
+                                   phone_numbers=phone_numbers, emails=emails, links=links)
+        else:
+            return 'Oops! Wrong file!'
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
