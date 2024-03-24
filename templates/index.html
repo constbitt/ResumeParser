@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English-Hebrew resume parser</title>
-</head>
-<body>
-    <h1>English-Hebrew resume parser</h1>
-    <form action="/" method="post" enctype="multipart/form-data">
-        <label for="file_input">Choose file:</label>
-        <input type="file" id="file_input" name="file_input"><br><br>
-        <button type="submit">Parse</button>
-    </form>
-    <div>
+{% extends 'base.html' %}
+
+{% block title %}
+English-Hebrew resume parser
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="mt-5">English-Hebrew resume parser</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="file_input">Choose file:</label>
+            <input type="file" id="file_input" name="file_input"><br><br>
+            <button class="btn btn-primary" type="submit">Parse</button>
+            <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code class="small">padding-top: 60px;</code> on the <code class="small">main &gt; .container</code>.</p>
+            <p>Back to <a href="/docs/5.3/examples/sticky-footer/">the default sticky footer</a> minus the navbar.</p>
+        </form>
+    </div>
+
+    <div class="container">
+
         {% if file_name %}
             <p>File loaded: {{ file_name }}</p>
             {% if cv_holder_name %}
@@ -29,5 +34,6 @@
             {% endif %}
         {% endif %}
     </div>
-</body>
-</html>
+{% endblock %}
+
+
