@@ -26,15 +26,20 @@ def index():
             # Создаем временный файл для сохранения загруженного файла
             temp_dir = tempfile.gettempdir()
             temp_path = os.path.join(temp_dir, file.filename)
-            file.save(temp_path)
             file_name = file.filename
+            file.save(temp_path)
             # Ваш код обработки загруженного файла
 
             cv_holder_name, birth, numbers, mails, links, education = extract_attributes(temp_path, language)
 
             # Удаление временного файла
             os.remove(temp_path)
-    return render_template('index.html', text=text, file_name=file_name, cv_holder_name=cv_holder_name, birth=birth, numbers=numbers, mails=mails, education=education, links=links)
+            return render_template('index.html', text=text, file_name=temp_path, cv_holder_name=cv_holder_name, birth=birth, numbers=numbers, mails=mails, education=education, links=links)
+            # os.remove(temp_path)
+        else:
+            return 'Oops! Wrong file!'
+    else:
+        return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
