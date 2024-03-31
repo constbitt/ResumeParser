@@ -5,73 +5,78 @@ English-Hebrew resume parser
 {% endblock %}
 
 {% block body %}
-    <div class="container">
-        <h1 class="mt-5">English-Hebrew resume parser</h1>
-        <form action="/" method="post" enctype="multipart/form-data">
-            <p>Back to <a href="/docs/5.3/examples/sticky-footer/">the default sticky footer</a> minus the navbar.</p>
-            <div class="input-group mb-3">
-                <input type="file" class="form-control" id="file_input" name="file_input">
-                <label class="input-group-text" for="file_input">Upload</label>
-            </div>
-            <button class="btn btn-primary" type="submit">Parse</button>
+<div class="container">
+    <h1 class="mt-5">English-Hebrew resume parser</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
 
-        </form>
-    </div>
+        <div class="mb-3">
+            <label for="language-select" class="form-label">Choose language:</label>
+            <select class="form-select" id="language-select" name="language">
+                <option value="english">English</option>
+                <option value="hebrew">Hebrew</option>
+            </select>
+        </div>
 
-    <div class="container">
-        <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
-            <div class="list-group">
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="file_input" name="file_input">
+            <label class="input-group-text" for="file_input">Upload</label>
+        </div>
+        <button class="btn btn-primary" type="submit">Parse</button>
+    </form>
+</div>
 
-                {% if file_name %}
-                    <p>File loaded: {{ file_name }}</p>
+{% if file_name %}
+<div class="container">
+    <h2 class="mt-5">Parsing Results</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table mt-2 w-full border text-sm text-gray-900">
+                <tbody class="divide-y text-left align-top">
+                    <tr class="divide-x bg-gray-50">
+                        <th class="px-3 py-2 font-semibold" scope="col">Attribute</th>
+                        <th class="px-3 py-2 font-semibold" scope="col">Text</th>
+                    </tr>
                     {% if cv_holder_name %}
-                        <a class="list-group-item d-flex gap-3 py-3" aria-current="true">
-                            <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                            <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div>
-                              <h6 class="mb-0">Holder's Name:</h6>
-                              <p class="mb-0 opacity-75">{{ cv_holder_name }}</p>
-                            </div>
-                          </div>
-                        </a>
+                        <tr class="divide-x">
+                            <td class="px-3 py-2 font-medium">Holder's Name:</td>
+                            <td class="w-full px-3 py-2">{{ cv_holder_name }}</td>
+                        </tr>
                     {% endif %}
-                    {% if phone_numbers %}
-                        <a class="list-group-item d-flex gap-3 py-3" aria-current="true">
-                            <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                            <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div>
-                              <h6 class="mb-0">Phone Numbers:</h6>
-                              <p class="mb-0 opacity-75">{{ phone_numbers }}</p>
-                            </div>
-                          </div>
-                        </a>
+                    {% if birth %}
+                        <tr class="divide-x">
+                            <td class="px-3 py-2 font-medium">Birth:</td>
+                            <td class="w-full px-3 py-2">{{ birth }}</td>
+                        </tr>
                     {% endif %}
-                    {% if emails %}
-                        <a class="list-group-item d-flex gap-3 py-3" aria-current="true">
-                            <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                            <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div>
-                              <h6 class="mb-0">Emails:</h6>
-                              <p class="mb-0 opacity-75">{{ emails }}</p>
-                            </div>
-                          </div>
-                        </a>
+                    {% if numbers %}
+                        <tr class="divide-x">
+                            <td class="px-3 py-2 font-medium">Phone Numbers:</td>
+                            <td class="w-full px-3 py-2">{{ numbers }}</td>
+                        </tr>
+                    {% endif %}
+                    {% if mails %}
+                        <tr class="divide-x">
+                            <td class="px-3 py-2 font-medium">Emails:</td>
+                            <td class="w-full px-3 py-2">{{ mails }}</td>
+                        </tr>
                     {% endif %}
                     {% if links %}
-                        <a class="list-group-item d-flex gap-3 py-3" aria-current="true">
-                            <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
-                            <div class="d-flex gap-2 w-100 justify-content-between">
-                            <div>
-                              <h6 class="mb-0">Links:</h6>
-                              <p class="mb-0 opacity-75">{{ links }}</p>
-                            </div>
-                          </div>
-                        </a>
+                        <tr class="divide-x">
+                            <td class="px-3 py-2 font-medium">Links:</td>
+                            <td class="w-full px-3 py-2">{{ links }}</td>
+                        </tr>
                     {% endif %}
-                {% endif %}
-            </div>
+                    {% if education %}
+                        <tr class="divide-x">
+                            <td class="px-3 py-2 font-medium">Education:</td>
+                            <td class="w-full px-3 py-2">{{ education }}</td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
         </div>
     </div>
+</div>
+{% endif %}
+
 {% endblock %}
-
-

@@ -4,17 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tryWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/English/InfoExtraction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GeneralMethods/Extraction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="base commit">
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/attributes_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/education_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/entities_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/matcher_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/name_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/english/english_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/auxiliary_methods/custom_matcher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/auxiliary_methods/custom_splitter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/auxiliary_methods/list_cleaner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/birth_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/dates_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/link_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/mail_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/phone_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/text_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/data_extraction/education_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/data_extraction/matcher_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/data_extraction/name_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/hebrew_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/English/InfoExtraction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeneralMethods/Extraction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +38,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -59,6 +74,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer ASPIRE 5/OneDrive/Рабочий стол/погром/курсовая/TryFile&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -68,6 +85,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer ASPIRE 5\OneDrive\Рабочий стол\погром\курсовая\tryWeb\attributes_extractor" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="tryWeb" />
@@ -111,24 +133,50 @@
       <workItem from="1710963562700" duration="7541000" />
       <workItem from="1711019450473" duration="31000" />
       <workItem from="1711115332100" duration="2317000" />
+      <workItem from="1711218525398" duration="1584000" />
+      <workItem from="1711461254313" duration="24000" />
+      <workItem from="1711792024699" duration="14812000" />
+      <workItem from="1711825472587" duration="2199000" />
+      <workItem from="1711885865102" duration="1098000" />
     </task>
+    <task id="LOCAL-00001" summary="base commit">
+      <option name="closed" value="true" />
+      <created>1711218568238</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711218568238</updated>
+    </task>
+    <task id="LOCAL-00002" summary="base commit">
+      <option name="closed" value="true" />
+      <created>1711886131823</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711886131823</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="base commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="base commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tryWeb$main.coverage" NAME="main Coverage Results" MODIFIED="1711119692584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tryWeb$main.coverage" NAME="main Coverage Results" MODIFIED="1711828716299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
