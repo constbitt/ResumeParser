@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="base commit">
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/attributes_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/education_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/entities_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/matcher_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/name_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/english/english_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/auxiliary_methods/custom_matcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/auxiliary_methods/custom_splitter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/auxiliary_methods/list_cleaner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/birth_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/dates_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/link_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/mail_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/phone_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/text_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/data_extraction/education_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/data_extraction/matcher_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/data_extraction/name_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/hebrew_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/English/InfoExtraction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeneralMethods/Extraction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="add app.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,30 +42,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer ASPIRE 5/OneDrive/Рабочий стол/погром/курсовая/TryFile&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.app.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Acer ASPIRE 5/OneDrive/Рабочий стол/погром/курсовая/TryFile",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Acer ASPIRE 5\OneDrive\Рабочий стол\погром\курсовая\tryWeb\attributes_extractor" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tryWeb" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="tryWeb" />
       <option name="ENV_FILES" value="" />
@@ -114,6 +113,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -137,7 +141,7 @@
       <workItem from="1711461254313" duration="24000" />
       <workItem from="1711792024699" duration="14812000" />
       <workItem from="1711825472587" duration="2199000" />
-      <workItem from="1711885865102" duration="1098000" />
+      <workItem from="1711885865102" duration="1421000" />
     </task>
     <task id="LOCAL-00001" summary="base commit">
       <option name="closed" value="true" />
@@ -155,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711886131823</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add ksusha">
+      <option name="closed" value="true" />
+      <created>1711887141248</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711887141248</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add app.py">
+      <option name="closed" value="true" />
+      <created>1711887239815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711887239815</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +194,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="base commit" />
+    <MESSAGE value="add ksusha" />
+    <MESSAGE value="add app.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add app.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tryWeb$main.coverage" NAME="main Coverage Results" MODIFIED="1711828716299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
