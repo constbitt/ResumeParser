@@ -1,10 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import os
+import pyperclip
 import shutil
 import tempfile
 from attributes_extractor.attributes_extractor import extract_attributes
-from my_copy import copy
-from save_to_csv import save_to_csv
+from utils import to_csv_format
 
 
 app = Flask(__name__)
@@ -40,5 +40,19 @@ def index():
             os.remove(temp_path)
     return render_template('index.html', text=text, file_name=file_name, cv_holder_name=cv_holder_name, birth=birth, numbers=numbers, mails=mails, education=education, links=links)
 
+@app.route('/copy_data', methods=['POST'])
+def copy_data():
+    data = request.json
+    csv_data = to_csv_format(data, delimiter='\t')
+    pyperclip.copy(csv_data)
+    return "Text copied to clipboard"
+
+@app.route('/process_data', methods=['POST'])
+def process_data():
+    data = request.json
+    csv_data = to_csv_format(data, delimiter=';')
+    return jsonify({"csv_data": csv_data})
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
+
