@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="add app.py" />
+    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="add app.py">
+      <change afterPath="$PROJECT_DIR$/my_copy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save_to_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attributes_extractor/attributes_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/attributes_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/education_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/education_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/matcher_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/matcher_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/name_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/name_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attributes_extractor/general_methods/auxiliary_methods/list_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/auxiliary_methods/list_cleaner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/phone_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/phone_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attributes_extractor/general_methods/text_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/text_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -31,6 +45,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev_1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -49,7 +68,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "dev__2",
     "last_opened_file_path": "C:/Users/Acer ASPIRE 5/OneDrive/Рабочий стол/погром/курсовая/TryFile",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -115,6 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.app" />
         <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
@@ -199,6 +222,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="add app.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tryWeb$app.coverage" NAME="app Coverage Results" MODIFIED="1712068239414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tryWeb$main.coverage" NAME="main Coverage Results" MODIFIED="1711828716299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
