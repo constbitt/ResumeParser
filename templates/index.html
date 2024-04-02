@@ -54,25 +54,44 @@ English-Hebrew resume parser
                         {% if numbers %}
                             <tr class="border">
                                 <td class="px-3 py-2 font-medium border">Phone Numbers:</td>
-                                <td class="px-3 py-2 border">{{ numbers }}</td>
+                                <td class="px-3 py-2 border">
+                                    {% for number in numbers %}
+                                        {{ number }}<br>
+                                    {% endfor %}
+                                </td>
                             </tr>
                         {% endif %}
+
                         {% if mails %}
                             <tr class="border">
                                 <td class="px-3 py-2 font-medium border">Emails:</td>
-                                <td class="px-3 py-2 border">{{ mails }}</td>
+                                <td class="px-3 py-2 border">
+                                    {% for mail in mails %}
+                                        {{ mail }}<br>
+                                    {% endfor %}
+                                </td>
                             </tr>
                         {% endif %}
+
                         {% if links %}
                             <tr class="border">
                                 <td class="px-3 py-2 font-medium border">Links:</td>
-                                <td class="px-3 py-2 border">{{ links }}</td>
+                                <td class="px-3 py-2 border">
+                                    {% for link in links %}
+                                        {{ link }}<br>
+                                    {% endfor %}
+                                </td>
                             </tr>
                         {% endif %}
+
                         {% if education %}
                             <tr class="border">
                                 <td class="px-3 py-2 font-medium border">Education:</td>
-                                <td class="px-3 py-2 border">{{ education }}</td>
+                                <td class="px-3 py-2 border">
+                                    {% for edu in education %}
+                                        {{ edu }}<br>
+                                    {% endfor %}
+                                </td>
                             </tr>
                         {% endif %}
                     </tbody>

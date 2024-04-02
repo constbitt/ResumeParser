@@ -13,6 +13,8 @@ def extract_attributes(file_path, language):
     mails = None
     links = None
     education = None
+    if cv_text == "Unsupported file format":
+        return cv_holder_name, birth, numbers, mails, links, education
     print(cv_text)
     nlp = spacy.load("en_core_web_sm")
     if language == "hebrew":
@@ -24,5 +26,3 @@ def extract_attributes(file_path, language):
     else:
         return None
     return cv_holder_name, birth, numbers, mails, links, education
-
-

@@ -34,7 +34,6 @@ class TextExtractor:
                 return "Unsupported file format"
         except Exception as e:
             print("Extracting data from file went wrong")
-        #text = re.sub(r'[\n\r]+', ' ', text)
         text = re.sub(r"[^a-zA-Zא-ת,\s@().0-9/:-]", " ", text)
         text = re.sub(r'\s+', ' ', text)
         return text

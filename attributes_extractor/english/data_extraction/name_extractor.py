@@ -12,7 +12,11 @@ def extract_name(text, nlp):
         if ent.label_ == "PERSON":
             name = ent.text
             break
-    if name1 != name:
-        return name1
-    return name
+    doc = nlp(name1.lower())
+    for entity in doc.ents:
+        if entity.label_ == "PERSON":
+            return name1
+    if name1 != name and text.find(name) < len(text) // 20:
+        return name
+    return None
 

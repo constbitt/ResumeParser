@@ -39,7 +39,7 @@ class ListCleaner:
 
 
     def check_string_subset(self, str1, str2):
-        if str1 in str2:
+        if str1.lower() in str2.lower():
             return len(str1) / len(str2)
         else:
             return 0
