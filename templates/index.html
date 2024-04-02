@@ -96,8 +96,62 @@ English-Hebrew resume parser
                         {% endif %}
                     </tbody>
                 </table>
-                <button class="btn btn-outline-secondary" type="button">Copy</button>
-                <button class="btn btn-outline-secondary" type="button">Download as .csv file</button>
+                <button class="btn btn-outline-secondary" type="button" id="copyButton">Copy</button>
+                <input type="file" id="fileInput" style="display: none;">
+                <button class="btn btn-outline-secondary" type="button" id="downloadButton">Download as .csv file</button>
+                <script>
+                    document.getElementById("copyButton").addEventListener("click", function() {
+                        fetch("/copy_data", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                cv_holder_name: "{{ cv_holder_name }}",
+                                birth: "{{ birth }}",
+                                numbers: {{ numbers | tojson }},
+                                mails: {{ mails | tojson }},
+                                links: {{ links | tojson }},
+                                education: {{ education | tojson }}
+                            })
+                        }).then(response => response.text())
+                          .then(data => alert(data))
+                          .catch(error => console.error(error));
+                    });
+
+                    document.getElementById("downloadButton").addEventListener("click", function() {
+                        var data = {
+                            cv_holder_name: "{{ cv_holder_name }}",
+                            birth: "{{ birth }}",
+                            numbers: {{ numbers | tojson }},
+                            mails: {{ mails | tojson }},
+                            links: {{ links | tojson }},
+                            education: {{ education | tojson }}
+                        };
+
+                        fetch("/process_data", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(data)
+                        }).then(response => response.json())
+                          .then(result => {
+                              var csvData = result.csv_data + "\n";
+                              var blob = new Blob([csvData], { type: "text/csv" });
+
+                              var link = document.createElement("a");
+                              link.href = window.URL.createObjectURL(blob);
+                              link.download = "parsed_resume.csv";
+
+                              document.body.appendChild(link);
+                              link.click();
+
+                              document.body.removeChild(link);
+                          })
+                          .catch(error => console.error(error));
+                    });
+                </script>
             </div>
         </div>
     </div>
