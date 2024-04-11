@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="add app.py" />
+    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="add languages and correct university">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +165,7 @@
       <workItem from="1712597266308" duration="8268000" />
       <workItem from="1712609793871" duration="283000" />
       <workItem from="1712660050245" duration="16304000" />
-      <workItem from="1712834747395" duration="296000" />
+      <workItem from="1712834747395" duration="1168000" />
     </task>
     <task id="LOCAL-00001" summary="base commit">
       <option name="closed" value="true" />
@@ -221,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712835002675</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add languages and correct university">
+      <option name="closed" value="true" />
+      <created>1712835066859</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712835066859</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +252,8 @@
     <MESSAGE value="base commit" />
     <MESSAGE value="add ksusha" />
     <MESSAGE value="add app.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="add app.py" />
+    <MESSAGE value="add languages and correct university" />
+    <option name="LAST_COMMIT_MESSAGE" value="add languages and correct university" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
