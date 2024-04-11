@@ -36,6 +36,7 @@ class TextExtractor:
             print("Extracting data from file went wrong")
         text = re.sub(r"[^a-zA-Zא-ת,\s@().0-9/:-]", " ", text)
         text = re.sub(r'\s+', ' ', text)
+        print(text)
         return text
 
     def _extract_text_from_docx(self, file_path):

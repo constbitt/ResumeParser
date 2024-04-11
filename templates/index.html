@@ -27,7 +27,7 @@ English-Hebrew resume parser
 <div class="container">
     <div class="pdf_head">
         <div class="pdf">
-            <iframe id="myPDF" src="{{ url_for('static', filename='testfile1.pdf') }}#toolbar=0" frameborder="0"></iframe>
+            <iframe id="myPDF" src="{{ url_for('static', filename=file_name) }}#toolbar=0" frameborder="0"></iframe>
         </div>
         <div class="pdf">
             <h2 class="mt-5">Parsing Results</h2>
@@ -94,6 +94,13 @@ English-Hebrew resume parser
                                 </td>
                             </tr>
                         {% endif %}
+
+                        {% if languages %}
+                            <tr class="border">
+                                <td class="px-3 py-2 font-medium border">Languages:</td>
+                                <td class="px-3 py-2 border">{{ languages }}</td>
+                            </tr>
+                        {% endif %}
                     </tbody>
                 </table>
                 <button class="btn btn-outline-secondary" type="button" id="copyButton">Copy</button>
@@ -112,7 +119,8 @@ English-Hebrew resume parser
                                 numbers: {{ numbers | tojson }},
                                 mails: {{ mails | tojson }},
                                 links: {{ links | tojson }},
-                                education: {{ education | tojson }}
+                                education: {{ education | tojson }},
+                                languages: "{{ languages }}"
                             })
                         }).then(response => response.text())
                           .then(data => alert(data))
@@ -126,7 +134,8 @@ English-Hebrew resume parser
                             numbers: {{ numbers | tojson }},
                             mails: {{ mails | tojson }},
                             links: {{ links | tojson }},
-                            education: {{ education | tojson }}
+                            education: {{ education | tojson }},
+                            languages: "{{ languages }}"
                         };
 
                         fetch("/process_data", {

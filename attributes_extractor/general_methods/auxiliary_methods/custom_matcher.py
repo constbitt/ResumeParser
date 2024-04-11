@@ -42,4 +42,7 @@ class CustomMatcher:
                     return False
             elif key == "ANY":
                 return True
+            elif key == "AND":
+                if token[0] != value:
+                    return False
         return True

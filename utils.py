@@ -6,6 +6,7 @@ def to_csv_format(data, delimiter):
     mails = data.get('mails')
     links = data.get('links')
     education = data.get('education')
+    languages = data.get('languages')
 
     csv_data = f"cv_holder_name{delimiter}{cv_holder_name}\n"
     csv_data += f"birth{delimiter}{birth}\n"
@@ -21,6 +22,9 @@ def to_csv_format(data, delimiter):
 
     if education:
         csv_data += f"education{delimiter}{delimiter.join(map(str, education))}\n"
+
+    if languages:
+        csv_data += f"languages{delimiter}{languages}"
 
     return csv_data
 

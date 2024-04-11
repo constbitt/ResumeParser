@@ -26,9 +26,11 @@ education_pattern = [
 
 
 university_pattern = [
+    [{"LOWER": {"IN": universities}}, {"LOWER": "of"}, {"IS_ALPHA": True}],
+
     [{"LOWER": {"IN": universities}}, {"LOWER": "of"}, {"POS": {"IN": parts}}, {"POS": {"IN": parts}, "OP": "?"}],
 
-    [{"POS": {"IN": parts}, "OP": "?"}, {"POS": {"IN": parts}, "OP": "?"}, {"LOWER": {"IN": universities}}],
+    [{"POS": {"IN": parts}, "OP": "?"}, {"POS": {"IN": parts}}, {"LOWER": {"IN": universities}}],
 
     [{"POS": {"IN": parts}}, {"LOWER": {"IN": universities}}, {"LOWER": "of"}, {"POS": {"IN": parts}}, {"POS": {"IN": parts}, "OP": "?"}],
 ]
@@ -40,6 +42,7 @@ def extract_education(text, nlp):
     unis = matcher_extractor.extract_matching(text, nlp, university_pattern, 2, stop_words)
     for university in unis:
         for i in range(len(educations)):
+            university = remove_common_suffix(educations[i], university)
             if check_substrings_distance(text, university, educations[i]):
                 educations[i] = educations[i] + ", " + university
     return educations
@@ -52,3 +55,16 @@ def check_substrings_distance(string, substring1, substring2):
         return True
     else:
         return False
+
+
+def remove_common_suffix(s1, s2):
+    common_suffix = ''
+    for i in range(1, min(len(s1), len(s2)) + 1):
+        if s1[-i:] == s2[:i]:
+            common_suffix = s1[-i:]
+    if common_suffix:
+        s1 = s1[:-len(common_suffix)]
+        s2 = s2[len(common_suffix):]
+    s2 = s2.lstrip()
+    return s2
+

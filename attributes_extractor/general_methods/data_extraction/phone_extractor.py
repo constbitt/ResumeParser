@@ -13,13 +13,13 @@ def extract_phone(text):
         r'\+\d\s\(\d{3}\)\s\d{3}-\d{4}',
         r'\+\d\s\(\d{3}\)\s\d{3}-\d{4}',
         r'\(\d{3}\)\d{3}-\d{4}',
-        r'\d{3}-\d{3}-\d{4}'
+        r'\d{3}-\d{3}-\d{4}',
+        r'\d{3}-\d{7}'
     ]
     for pattern in patterns:
         matches = re.findall(pattern, text)
         for match in matches:
             phones.append(match)
-
     list_cleaner = ListCleaner(phones)
     phones = list_cleaner.clean_words(phones)
     phones = list(filter(lambda s: not re.match(r'\d{4}-\d{4}', s), phones))
