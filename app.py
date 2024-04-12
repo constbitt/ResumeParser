@@ -3,7 +3,7 @@ import os
 import pyperclip
 import shutil
 import tempfile
-import comtypes.client
+
 from attributes_extractor.attributes_extractor import extract_attributes
 from utils import to_csv_format
 from pdf_converter import FileConverter
