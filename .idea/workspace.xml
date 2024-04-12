@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="add requirements">
+    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="update requirements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf_converter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +166,10 @@
       <workItem from="1712597266308" duration="8268000" />
       <workItem from="1712609793871" duration="283000" />
       <workItem from="1712660050245" duration="16304000" />
-      <workItem from="1712834747395" duration="2085000" />
+      <workItem from="1712834747395" duration="5916000" />
+      <workItem from="1712912755642" duration="609000" />
+      <workItem from="1712918985705" duration="632000" />
+      <workItem from="1712919657352" duration="2262000" />
     </task>
     <task id="LOCAL-00001" summary="base commit">
       <option name="closed" value="true" />
@@ -239,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712836229232</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update requirements">
+      <option name="closed" value="true" />
+      <created>1712837437252</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712837437252</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +274,8 @@
     <MESSAGE value="add app.py" />
     <MESSAGE value="add languages and correct university" />
     <MESSAGE value="add requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="add requirements" />
+    <MESSAGE value="update requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="update requirements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -271,11 +284,15 @@
           <url>file://$PROJECT_DIR$/attributes_extractor/hebrew/hebrew_extractor.py</url>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pdf_converter.py</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tryWeb$app.coverage" NAME="app Coverage Results" MODIFIED="1712760155853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tryWeb$app.coverage" NAME="app Coverage Results" MODIFIED="1712921178600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tryWeb$main.coverage" NAME="main Coverage Results" MODIFIED="1711828716299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
