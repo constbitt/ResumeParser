@@ -23,6 +23,12 @@ English-Hebrew resume parser
         </div>
     </form>
 </div>
+{% if error_message %}
+<div class="container">
+    <h2 class="mt-5">{{ error_message }}</h2>
+</div>
+{% endif %}
+
 {% if file_name %}
 <div class="container">
     <div class="pdf_head">

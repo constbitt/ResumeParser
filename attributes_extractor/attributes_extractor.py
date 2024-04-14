@@ -14,14 +14,13 @@ def extract_attributes(file_path, language):
     links = None
     education = None
     languages = None
-    if cv_text == "Unsupported file format":
-        return cv_holder_name, birth, numbers, mails, links, education
+    if cv_text == "format_error":
+        return "format_error"
     nlp = spacy.load("en_core_web_sm")
     if language == "hebrew":
         nlp.add_pipe("span_marker", config={"model": "iahlt/span-marker-xlm-roberta-base-nemo-mt-he"})
         cv_holder_name, birth, numbers, mails, links, education, languages = extract_hebrew(cv_text, nlp)
     elif language == "english":
         cv_holder_name, birth, numbers, mails, links, education, languages = extract_english(cv_text, nlp)
-    else:
-        return None
+
     return cv_holder_name, birth, numbers, mails, links, education, languages

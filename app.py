@@ -35,8 +35,10 @@ def index():
             file.save(temp_path)
             file_name = file.filename
             # Ваш код обработки загруженного файла
-
-            cv_holder_name, birth, numbers, mails, links, education, languages = extract_attributes(temp_path, language)
+            try:
+                cv_holder_name, birth, numbers, mails, links, education, languages = extract_attributes(temp_path, language)
+            except:
+                return render_template('index.html', error_message='Wrong file format!')
 
             # Конвертация в pdf для предпросмотра
             static_dir = os.path.join(app.root_path, 'static')
@@ -55,7 +57,7 @@ def index():
             os.remove(temp_path)
 
     return render_template('index.html', text=text, file_name=pdf_name, cv_holder_name=cv_holder_name, birth=birth,
-                           numbers=numbers, mails=mails, education=education, links=links, languages=languages)
+                           numbers=numbers, mails=mails, education=education, links=links, languages=languages, error_message=None)
 
 
 @app.route('/copy_data', methods=['POST'])

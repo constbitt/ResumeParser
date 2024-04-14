@@ -31,7 +31,7 @@ class TextExtractor:
             elif file_extension == '.html' or file_extension == '.htm':
                 text = self._extract_text_from_html(file_path)
             else:
-                return "Unsupported file format"
+                return "format_error"
         except Exception as e:
             print("Extracting data from file went wrong")
         text = re.sub(r"[^a-zA-Zא-ת,\s@().0-9/:-]", " ", text)
