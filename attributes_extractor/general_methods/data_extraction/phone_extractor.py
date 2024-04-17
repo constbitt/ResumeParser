@@ -14,7 +14,8 @@ def extract_phone(text):
         r'\+\d\s\(\d{3}\)\s\d{3}-\d{4}',
         r'\(\d{3}\)\d{3}-\d{4}',
         r'\d{3}-\d{3}-\d{4}',
-        r'\d{3}-\d{7}'
+        r'\d{3}-\d{7}',
+        r'\+\d\(\d{3}\)\d{3}-\d{4}'
     ]
     for pattern in patterns:
         matches = re.findall(pattern, text)

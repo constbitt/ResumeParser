@@ -19,8 +19,7 @@ class TextExtractor:
         text = ""
         try:
             file_extension = os.path.splitext(file_path)[1].lower()
-
-            if file_extension == '.docx':
+            if file_extension == '.docx' or file_extension == '.doc':
                 text = self._extract_text_from_docx(file_path)
             elif file_extension == '.pdf':
                 text = self._extract_text_from_pdf(file_path)
@@ -34,7 +33,7 @@ class TextExtractor:
                 return "format_error"
         except Exception as e:
             print("Extracting data from file went wrong")
-        text = re.sub(r"[^a-zA-Zא-ת,\s@().0-9/:-]", " ", text)
+        text = re.sub(r"[^a-zA-Zא-ת,\s@().0-9/:+-]", " ", text)
         text = re.sub(r'\s+', ' ', text)
         print(text)
         return text

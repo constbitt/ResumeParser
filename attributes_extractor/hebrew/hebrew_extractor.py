@@ -5,7 +5,7 @@ from attributes_extractor.general_methods.data_extraction.link_extractor import 
 from attributes_extractor.general_methods.data_extraction.mail_extractor import extract_mail
 from attributes_extractor.general_methods.data_extraction.phone_extractor import extract_phone
 from attributes_extractor.general_methods.data_extraction.language_extractor import extract_languages
-
+#from attributes_extractor.hebrew.data_extraction.matcher_extractor import extract_matching
 
 def extract_hebrew(cv_text, nlp):
     cv_holder_name = extract_name(cv_text, nlp)
@@ -16,3 +16,5 @@ def extract_hebrew(cv_text, nlp):
     education = extract_education(cv_text)
     languages = extract_languages(cv_text, nlp)
     return cv_holder_name, birth, numbers, mails, links, education, languages
+
+

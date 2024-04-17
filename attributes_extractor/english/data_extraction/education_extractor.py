@@ -38,7 +38,6 @@ university_pattern = [
 
 def extract_education(text, nlp):
     educations = matcher_extractor.extract_matching(text, nlp, education_pattern, 1, stop_words)
-
     unis = matcher_extractor.extract_matching(text, nlp, university_pattern, 2, stop_words)
     for university in unis:
         for i in range(len(educations)):

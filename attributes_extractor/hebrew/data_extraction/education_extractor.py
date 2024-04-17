@@ -162,7 +162,7 @@ def check_substrings_distance(text, substring1, substring2):
         distance = abs(start1 - end2)
     else:
         distance = abs(start2 - end1)
-    if distance < 10:
+    if distance < 20:
         return True
     return False
 
