@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="remove comtypes">
+    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="use spire.doc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attributes_extractor/attributes_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/attributes_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/education_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/english/data_extraction/education_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/phone_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/data_extraction/phone_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attributes_extractor/general_methods/text_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/general_methods/text_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attributes_extractor/hebrew/data_extraction/education_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/data_extraction/education_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attributes_extractor/hebrew/data_extraction/name_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/data_extraction/name_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attributes_extractor/hebrew/hebrew_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/hebrew/hebrew_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf_converter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +181,7 @@
       <workItem from="1713207939382" duration="5718000" />
       <workItem from="1713262399595" duration="3332000" />
       <workItem from="1713292213288" duration="1386000" />
-      <workItem from="1713350469411" duration="328000" />
+      <workItem from="1713350469411" duration="2103000" />
     </task>
     <task id="LOCAL-00001" summary="base commit">
       <option name="closed" value="true" />
@@ -297,7 +287,31 @@
       <option name="project" value="LOCAL" />
       <updated>1712923579090</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="remove comtypes">
+      <option name="closed" value="true" />
+      <created>1713350824076</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713350824077</updated>
+    </task>
+    <task id="LOCAL-00015" summary="use spire.doc">
+      <option name="closed" value="true" />
+      <created>1713350922116</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713350922116</updated>
+    </task>
+    <task id="LOCAL-00016" summary="use spire.doc">
+      <option name="closed" value="true" />
+      <created>1713351011856</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713351011856</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +350,8 @@
     <MESSAGE value="replace compatible library" />
     <MESSAGE value="uninstall pywin32" />
     <MESSAGE value="remove comtypes" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove comtypes" />
+    <MESSAGE value="use spire.doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="use spire.doc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -353,7 +368,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tryWeb$app.coverage" NAME="app Coverage Results" MODIFIED="1713350843191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tryWeb$app.coverage" NAME="app Coverage Results" MODIFIED="1713352820344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tryWeb$main.coverage" NAME="main Coverage Results" MODIFIED="1711828716299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
