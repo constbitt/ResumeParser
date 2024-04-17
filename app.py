@@ -49,8 +49,10 @@ def index():
                 try:
                     cv_holder_name, birth, numbers, mails, links, education, languages = extract_attributes(temp_path,
                                                                                                             language)
-                except:
-                    return render_template('index.html', error_message='Wrong file format!')
+                except Exception as e:
+                    #print("An error occurred:", e)
+                    return render_template('index.html', error_message=e)
+                    #return render_template('index.html', error_message='Wrong file format!')
 
                 # Конвертация в pdf для предпросмотра
                 file_name, file_extension = os.path.splitext(file_name)
