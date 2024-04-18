@@ -18,7 +18,7 @@ def extract_attributes(file_path, language):
         return "format_error"
     nlp = spacy.load("en_core_web_sm")
     if language == "hebrew":
-        #nlp.add_pipe("span_marker", config={"model": "iahlt/span-marker-xlm-roberta-base-nemo-mt-he"})
+        nlp.add_pipe("span_marker", config={"model": "iahlt/span-marker-xlm-roberta-base-nemo-mt-he"})
         cv_holder_name, birth, numbers, mails, links, education, languages = extract_hebrew(cv_text, nlp)
     elif language == "english":
         cv_holder_name, birth, numbers, mails, links, education, languages = extract_english(cv_text, nlp)

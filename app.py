@@ -26,15 +26,6 @@ def index():
     pdf_name = ''
     try:
         if request.method == 'POST':
-            text = None
-            file_name = None
-            cv_holder_name = None
-            birth = None
-            numbers = None
-            mails = None
-            links = None
-            education = None
-            languages = None
             text = request.form.get('text_input')
             file = request.files.get('file_input')
             language = request.form.get('language')
@@ -51,8 +42,8 @@ def index():
                                                                                                             language)
                 except Exception as e:
                     #print("An error occurred:", e)
-                    return render_template('index.html', error_message=e)
-                    #return render_template('index.html', error_message='Wrong file format!')
+                    #return render_template('index.html', error_message=e)
+                    return render_template('index.html', error_message='Wrong file format!')
 
                 # Конвертация в pdf для предпросмотра
                 file_name, file_extension = os.path.splitext(file_name)
