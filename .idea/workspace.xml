@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="update error message">
+    <list default="true" id="03d758c5-41f0-4481-911a-7e603a6146cd" name="Changes" comment="update methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attributes_extractor/attributes_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/attributes_extractor/attributes_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf_converter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +182,7 @@
       <workItem from="1713262399595" duration="3332000" />
       <workItem from="1713292213288" duration="1386000" />
       <workItem from="1713350469411" duration="6805000" />
-      <workItem from="1713431164600" duration="2151000" />
+      <workItem from="1713431164600" duration="6483000" />
     </task>
     <task id="LOCAL-00001" summary="base commit">
       <option name="closed" value="true" />
@@ -331,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713360572706</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="update methods">
+      <option name="closed" value="true" />
+      <created>1713437203878</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713437203878</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +366,8 @@
     <MESSAGE value="use spire.doc" />
     <MESSAGE value="remove tmpdir" />
     <MESSAGE value="update error message" />
-    <option name="LAST_COMMIT_MESSAGE" value="update error message" />
+    <MESSAGE value="update methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="update methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
